@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="excersice2" />
         <module name="MathAppplication" />
+        <module name="RecapFunDay4" />
       </profile>
     </annotationProcessing>
   </component>

@@ -16,7 +16,12 @@ public class VariableApp {
 //3. Declare a variable to store your middle initial
 //4. Declare a variable to store whether you have pets (yes/no)
 //5. Declare a variable with a nice message or saying
+        int daysInWeek = 7;
+        double coffeePrice = 4.99;
+        char favLetter = 'J';
+        boolean rainingNow = false;
 
+        System.out.println("every week we have " + daysInWeek + " days and i always buy coffee at my shop it costs $" + coffeePrice + " my favorite letter is " + favLetter + ", is it raining today? " + rainingNow);
 
 
 //1. Declare AND initialize variables for:

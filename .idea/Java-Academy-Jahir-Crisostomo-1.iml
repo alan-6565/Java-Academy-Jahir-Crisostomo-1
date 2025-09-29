@@ -5,6 +5,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Workbood1d/MathApplication" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/Workbood1d/StringApplication/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Financial-Calculators/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Week1Recap/src/main/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

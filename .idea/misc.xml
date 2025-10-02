@@ -8,7 +8,17 @@
         <option value="$PROJECT_DIR$/Workbood1d/MathAppplication/pom.xml" />
         <option value="$PROJECT_DIR$/Workbood1d/RecapFunDay4/pom.xml" />
         <option value="$PROJECT_DIR$/Workbood1d/CHALLENGES/pom.xml" />
+        <option value="$PROJECT_DIR$/DEMOS/WKB2/pom.xml" />
+        <option value="$PROJECT_DIR$/DEMOS/Demo-loops/pom.xml" />
+        <option value="$PROJECT_DIR$/DEMOS/VideoGame-Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Workbook2/exercises1/pom.xml" />
+        <option value="$PROJECT_DIR$/Workbook2/exercisee/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Workbook2/exercises1/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">

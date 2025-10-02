@@ -6,11 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Demo-loops" />
+        <module name="exercisee" />
+        <module name="MathAppplication" />
         <module name="excersice2" />
         <module name="RecapFunDay4" />
-        <module name="MathAppplication" />
+        <module name="WKB2" />
+        <module name="VideoGame-Demo" />
         <module name="CHALLENGES" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="exercises1" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

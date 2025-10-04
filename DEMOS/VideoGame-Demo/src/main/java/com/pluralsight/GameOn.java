@@ -1,32 +1,41 @@
 package com.pluralsight;
-
+import java.util.Scanner;
 public class GameOn {
-    public static void main(String[] args) {
-        for(int i = 1; i <= 5; i++){
-            System.out.println("Shooting web #" + i);
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("what is your pets name: ");
+        String name = sc.nextLine();
+
+        int hunger = 10;
+        int energy = 10;
+        int social = 10;
+
+        while (hunger > 0 && energy > 0 && social > 0){
+            System.out.println("Name of Sim is: " + name);
+            System.out.println("|\\__/,|   (`\\\n" +
+                    " |o o  |__ _)\n" +
+                    " _.( T   )  `  /\n" +
+                    "((_ `^--' /_<  \\\n" +
+                    "`` `-'(((/  (((/");
+            System.out.println("Hunger: " + hunger);
+            System.out.println("Energy: " + energy);
+            System.out.println("Social: " + social);
+
+            System.out.println("\n Whats your next action?");
+            System.out.println("[p] = play [e] = eat [f] = finish game");
+            String play = sc.nextLine();
+            if (play.equals("p")){
+                hunger -= 1;
+                energy -= 2;
+                social += 1;
+            } else if (play.equals("e")) {
+                hunger += 2;
+                energy += 1;
+                social -= 1;
+            } else {
+                break;
+            }
         }
 
-
-        GameOn spiderman = new GameOn();
-        spiderman.webZip("New York");
-
-        String villian = "\"VENOM!\"";
-        System.out.println("And his name issss " + villian);
-        String intro = " I am Spider-Man! ";
-        System.out.println(intro.trim().toLowerCase());
-        String tag = "OSCORP-213";
-        int dash = tag.indexOf("-");
-        String company = tag.substring(0, dash);
-        System.out.println(company);
-        String enemies = "Venom|Rhino|Green Goblin";
-        String[] enemy = enemies.split("\\|");
-        System.out.println(enemy[0]);
-    }
-
-
-
-
-    public void webZip(String destination) {
-        System.out.println("🕸️ Web-zipping to " + destination + "!");
     }
 }

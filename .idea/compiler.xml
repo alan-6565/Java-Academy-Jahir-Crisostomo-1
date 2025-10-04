@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Demo-loops" />
+        <module name="TheaterReservations" />
         <module name="exercisee" />
         <module name="MathAppplication" />
         <module name="powerpuffGirls" />
@@ -15,6 +16,8 @@
         <module name="WKB2" />
         <module name="VideoGame-Demo" />
         <module name="CHALLENGES" />
+        <module name="HighScoreWins" />
+        <module name="ToDoListApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

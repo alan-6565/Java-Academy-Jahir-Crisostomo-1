@@ -6,8 +6,8 @@ public class exercise2 {
 
         System.out.println("Enter your full name: ");
         String before = sc.nextLine().trim();
-        String name = before.trim();
-        String[] splitting = name.split("\\s+");
+
+        String[] splitting = before.split("\\s+");
 
         if(splitting.length == 2){
             System.out.println("First: " + splitting[0]);
@@ -18,6 +18,9 @@ public class exercise2 {
             System.out.println("First: " + splitting[0]);
             System.out.println("Middle: " + splitting[1]);
             System.out.println("Last: " + splitting[2]);
+        }
+        else {
+            System.out.println("enter first and last or first middle and last");
         }
     }
 }

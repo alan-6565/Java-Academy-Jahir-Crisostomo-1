@@ -10,13 +10,14 @@
         <module name="TheaterReservations" />
         <module name="exercisee" />
         <module name="MathAppplication" />
+        <module name="WKB2" />
+        <module name="CHALLENGES" />
+        <module name="HighScoreWins" />
+        <module name="AddressBuilder" />
         <module name="powerpuffGirls" />
         <module name="excersice2" />
         <module name="RecapFunDay4" />
-        <module name="WKB2" />
         <module name="VideoGame-Demo" />
-        <module name="CHALLENGES" />
-        <module name="HighScoreWins" />
         <module name="ToDoListApp" />
       </profile>
     </annotationProcessing>

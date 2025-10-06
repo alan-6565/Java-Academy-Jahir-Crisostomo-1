@@ -15,6 +15,7 @@
         <module name="CHALLENGES" />
         <module name="HighScoreWins" />
         <module name="AddressBuilder" />
+        <module name="RollTheDice" />
         <module name="powerpuffGirls" />
         <module name="excersice2" />
         <module name="CellPhoneApplication" />

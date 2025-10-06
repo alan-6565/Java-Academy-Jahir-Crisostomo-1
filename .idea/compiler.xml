@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Demo-loops" />
+        <module name="LoopingExercises" />
         <module name="TheaterReservations" />
         <module name="exercisee" />
         <module name="MathAppplication" />
@@ -28,7 +29,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="CellPhoneApplication" options="--add-modules jdk.internal.le --add-exports jdk.internal.le/jdk.internal.org.jline.keymap=ALL-UNNAMED" />
+      <module name="CellPhoneApplication" options="" />
     </option>
   </component>
 </project>

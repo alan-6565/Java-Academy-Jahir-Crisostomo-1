@@ -16,6 +16,7 @@
         <module name="AddressBuilder" />
         <module name="powerpuffGirls" />
         <module name="excersice2" />
+        <module name="CellPhoneApplication" />
         <module name="RecapFunDay4" />
         <module name="VideoGame-Demo" />
         <module name="ToDoListApp" />
@@ -24,5 +25,10 @@
     <bytecodeTargetLevel>
       <module name="exercises1" target="17" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CellPhoneApplication" options="--add-modules jdk.internal.le --add-exports jdk.internal.le/jdk.internal.org.jline.keymap=ALL-UNNAMED" />
+    </option>
   </component>
 </project>

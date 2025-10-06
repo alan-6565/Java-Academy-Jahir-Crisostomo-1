@@ -39,7 +39,7 @@ public class CellPhone {
     }
 
     public String getOwner() {
-        return this.owner;
+        return owner;
     }
 
     //Setters

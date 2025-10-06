@@ -23,6 +23,7 @@
         <module name="RecapFunDay4" />
         <module name="VideoGame-Demo" />
         <module name="ToDoListApp" />
+        <module name="vehicleDirectory" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

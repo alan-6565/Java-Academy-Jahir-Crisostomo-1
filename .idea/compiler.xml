@@ -20,6 +20,7 @@
         <module name="powerpuffGirls" />
         <module name="excersice2" />
         <module name="CellPhoneApplication" />
+        <module name="famousQuote" />
         <module name="RecapFunDay4" />
         <module name="VideoGame-Demo" />
         <module name="ToDoListApp" />
@@ -28,6 +29,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="exercises1" target="17" />
+      <module name="FamousQuotes" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

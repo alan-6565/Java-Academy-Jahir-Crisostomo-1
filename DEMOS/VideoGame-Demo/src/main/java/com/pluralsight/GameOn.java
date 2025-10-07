@@ -2,30 +2,25 @@ package com.pluralsight;
 import java.util.Scanner;
 public class GameOn {
     public static void main(String[] args) {
-        Person p1 = new Person("Dana", 63);
-
-        Person p2 = new Person();
-        p2.setName("Natalie");
-        p2.setAge(37);
-        System.out.println("P1's name is " + p1.getName());
-        System.out.println("P2's name is " + p2.getName());
-
-
-        int[] nums = {63, 65, 60, 53, 58, 37, 35, 31};
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + " ");
+        Scanner scanner = new Scanner(System.in);
+        try {
+            String[] names = {
+                    "Ezra", "Elisha", "Ian",
+                    "Siddalee", "Pursalane", "Zephaniah"
+            };
+            System.out.print("Pick a kid (select #1 - #6): ");
+            int index = scanner.nextInt();
+            index--; // change number from range 1-6 to range 0-5
+            // as long as the user entered a number in the range
+            // of 1 to 6, this will work. Otherwise the index
+            // will be out of range.
+            System.out.println(names[index]);
         }
-        System.out.println();
-
-        String[] colors = {"red", "white", "blue"};
-        String[] colorCopy = new String[3];
-// copy colors to colorCopy 1 at a time
-        for (int i = 0; i < 3; i++) {
-            colorCopy[i] = colors[i];
+        catch (Exception e) {
+            System.out.println("Your number was out of range!");
+            e.printStackTrace();
         }
-        for (int i = 0; i < 3; i++) {
-            System.out.println(colorCopy[i]);
-        }
+        scanner.close();
     }
 }
 

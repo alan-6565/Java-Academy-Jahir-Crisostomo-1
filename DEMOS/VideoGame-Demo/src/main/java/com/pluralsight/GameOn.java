@@ -1,20 +1,21 @@
 package com.pluralsight;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.io.*;
 public class GameOn {
-    public static void main(String[] args) {
-        String[] team = {"Peter", "MJ", "Ned", "Gwen", "Miles"};
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Pick a mamber from the roster number 1-5 \n 1.peter\n2.mj\n3.ned\n4.gwen\n5.miles");
-        try{
-            int pick = Integer.parseInt(sc.nextLine()) - 1;
-            System.out.println("You teamed up with " + team[pick]);
-        } catch (NumberFormatException e) {
-            System.out.println("thats not a number");
-        } catch (Exception e) {
-            System.out.println("number was out of bounds");
+    public static void main(String[] args)  {
+        try {
+            FileReader fr = new FileReader("spidey_logs.txt");
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+            while ((line = br.readLine()) != null){
+                System.out.println(line);
+            }
+            br.close();
+            System.out.println("Mission logs complete");
+        } catch (FileNotFoundException e) {
+            System.out.println("Log file not found! Maybe it got wiped by Electro ⚡");
+        }catch (IOException e) {
+            System.out.println("Something went wrong while reading the file.");
         }
-
     }
 }
 

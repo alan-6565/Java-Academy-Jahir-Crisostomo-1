@@ -1,26 +1,20 @@
 package com.pluralsight;
+import java.util.ArrayList;
 import java.util.Scanner;
 public class GameOn {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        try {
-            String[] names = {
-                    "Ezra", "Elisha", "Ian",
-                    "Siddalee", "Pursalane", "Zephaniah"
-            };
-            System.out.print("Pick a kid (select #1 - #6): ");
-            int index = scanner.nextInt();
-            index--; // change number from range 1-6 to range 0-5
-            // as long as the user entered a number in the range
-            // of 1 to 6, this will work. Otherwise the index
-            // will be out of range.
-            System.out.println(names[index]);
+        String[] team = {"Peter", "MJ", "Ned", "Gwen", "Miles"};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Pick a mamber from the roster number 1-5 \n 1.peter\n2.mj\n3.ned\n4.gwen\n5.miles");
+        try{
+            int pick = Integer.parseInt(sc.nextLine()) - 1;
+            System.out.println("You teamed up with " + team[pick]);
+        } catch (NumberFormatException e) {
+            System.out.println("thats not a number");
+        } catch (Exception e) {
+            System.out.println("number was out of bounds");
         }
-        catch (Exception e) {
-            System.out.println("Your number was out of range!");
-            e.printStackTrace();
-        }
-        scanner.close();
+
     }
 }
 

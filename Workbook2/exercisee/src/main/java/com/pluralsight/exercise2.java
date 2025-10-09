@@ -4,23 +4,20 @@ public class exercise2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter your full name: ");
-        String before = sc.nextLine().trim();
+        System.out.println("Type your full name");
+        String name = sc.nextLine().trim();
 
-        String[] splitting = before.split("\\s+");
+        String[] finalName = name.split(" ");
 
-        if(splitting.length == 2){
-            System.out.println("First: " + splitting[0]);
-            System.out.println("Middle: (Nothing)");
-            System.out.println("Last: " + splitting[1]);
+        if (finalName.length == 2){
+            System.out.println("First: " + finalName[0]);
+            System.out.println("Last: " + finalName [1]);
         }
-        else if (splitting.length == 3){
-            System.out.println("First: " + splitting[0]);
-            System.out.println("Middle: " + splitting[1]);
-            System.out.println("Last: " + splitting[2]);
+        if (finalName.length == 3){
+            System.out.println("First: " + finalName[0]);
+            System.out.println("Middle: " + finalName [1]);
+            System.out.println("Last: " + finalName[2]);
         }
-        else {
-            System.out.println("enter first and last or first middle and last");
-        }
+
     }
 }

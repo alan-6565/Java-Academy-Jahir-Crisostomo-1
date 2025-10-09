@@ -3,7 +3,8 @@ import java.io.*;
 public class GameOn {
     public static void main(String[] args)  {
         try {
-            FileReader fr = new FileReader("spidey_logs.txt");
+
+            FileReader fr = new FileReader("/Users/alansito/Pluralsight/Java-Academy-Jahir-Crisostomo-1/DEMOS/VideoGame-Demo/src/main/java/com/pluralsight/spidey_logs.txt");
             BufferedReader br = new BufferedReader(fr);
             String line;
             while ((line = br.readLine()) != null){

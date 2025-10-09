@@ -13,9 +13,9 @@ public class exercise2 {
             System.out.println("First: " + finalName[0]);
             System.out.println("Last: " + finalName [1]);
         }
-        if (finalName.length == 3){
+        if (finalName.length == 3) {
             System.out.println("First: " + finalName[0]);
-            System.out.println("Middle: " + finalName [1]);
+            System.out.println("Middle: " + finalName[1]);
             System.out.println("Last: " + finalName[2]);
         }
 

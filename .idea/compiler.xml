@@ -27,6 +27,7 @@
         <module name="VideoGame-Demo" />
         <module name="ToDoListApp" />
         <module name="vehicleDirectory" />
+        <module name="HotelOperations." />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

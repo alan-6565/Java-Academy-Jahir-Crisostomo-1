@@ -46,7 +46,7 @@ public class Room {
         }
     }
 
-    public void checkOut() {
+    public static void checkOut() {
         if (occupied){
             occupied = false;
             dirty = true;
@@ -57,7 +57,7 @@ public class Room {
         }
     }
 
-    public void cleanRoom(){
+    public static void cleanRoom(){
         if (dirty){
             dirty = false;
             System.out.println("Room is clean ready for next guest");

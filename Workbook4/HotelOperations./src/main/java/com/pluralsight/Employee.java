@@ -5,12 +5,12 @@ import java.time.LocalTime;
 
 public class Employee {
     private int employeeId;
-    private String name;
+    private static String name;
     private String department;
     private double payRate;
     private double hoursWorked;
-    private double startTime;
-    private boolean isWorking;
+    private static double startTime;
+    private static boolean isWorking;
 
     public Employee(int employeeId, String name, String department, double payRate, double hoursWorked) {
         this.employeeId = employeeId;
@@ -46,13 +46,13 @@ public class Employee {
         return (getRegularHours() * payRate) + (getOvertimeHours() * payRate * 1.5);
     }
 
-    private double convertToDecimalTime(LocalDateTime time) {
+    private static double convertToDecimalTime(LocalDateTime time) {
         int hour = time.getHour();      // 0–23
         int minute = time.getMinute();  // 0–59
         return hour + (minute / 60.0);  // e.g., 14:30 = 14.5
     }
 
-    private String formatTime(double time24) {
+    private static String formatTime(double time24) {
         int hours = (int) time24;
         double minutesDecimal = time24 - hours;
         int minutes = (int) (minutesDecimal * 60);
@@ -64,7 +64,7 @@ public class Employee {
         return String.format("%d:%02d %s", hours, minutes, amPm);
     }
 
-    public void punchIn(double time) {
+    public static void punchIn(double time) {
         if (isWorking) {
             System.out.println("⚠️ " + name + " has already punched in.");
         } else {
@@ -75,7 +75,7 @@ public class Employee {
     }
 
     // 2️⃣ punchIn() — automatic
-    public void punchIn() {
+    public static void punchIn() {
         if (isWorking) {
             System.out.println("⚠️ " + name + " has already punched in.");
         } else {

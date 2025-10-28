@@ -17,6 +17,7 @@
         <module name="WKB2" />
         <module name="CHALLENGES" />
         <module name="HighScoreWins" />
+        <module name="Vehicles" />
         <module name="AddressBuilder" />
         <module name="RollTheDice" />
         <module name="powerpuffGirls" />

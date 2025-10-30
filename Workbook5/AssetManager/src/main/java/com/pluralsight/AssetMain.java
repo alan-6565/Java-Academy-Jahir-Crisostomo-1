@@ -10,13 +10,17 @@ public class AssetMain {
         asset.add(new Vehicle("family car", "data", 20000, "honda accord", 2020, 20000));
 
         for (int i = 0; i < asset.size(); i++) {
+            String message = "";
+
             if (asset.get(i) instanceof House){
-                System.out.println(((House) asset.get(i)).getAddress());
+                House house = (House) asset.get(i);
+                message = "House at " + house.getAddress();
             }
             else if (asset.get(i) instanceof Vehicle){
-                System.out.println(((Vehicle) asset.get(i)).getYear());
-                System.out.println(((Vehicle) asset.get(i)).getMakeModel());
+                System.out.println("Vehicle: " + ((Vehicle) asset.get(i)).getYear() + " " + ((Vehicle) asset.get(i)).getMakeModel());
+
             }
+            System.out.println(message);
             System.out.print("description: " + asset.get(i).getDescription() + ", ");
             System.out.print("date i recieved: " + asset.get(i).getDataAcquired() + ", ");
             System.out.print("paid for: " + asset.get(i).getOriginalCost() + ", ");

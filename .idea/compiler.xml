@@ -13,6 +13,7 @@
         <module name="exercisee" />
         <module name="PayrollCalculator" />
         <module name="BedtimeStories" />
+        <module name="AssetManager" />
         <module name="MathAppplication" />
         <module name="WKB2" />
         <module name="CHALLENGES" />

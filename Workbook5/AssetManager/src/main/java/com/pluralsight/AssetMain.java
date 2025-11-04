@@ -26,5 +26,8 @@ public class AssetMain {
             System.out.print("paid for: " + asset.get(i).getOriginalCost() + ", ");
             System.out.println("description: " + asset.get(i).getValue());
         }
+        Cash cash = new Cash("Emergency Fund", "2023-01-01", 2000);
+        System.out.println("💵 Cash Description: " + cash.getDescription());
+        System.out.println("💰 Cash Value: $" + cash.getValue());
     }
 }
